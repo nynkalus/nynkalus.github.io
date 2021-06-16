@@ -1,0 +1,350 @@
+/* top of style sheet is dedicated to defining the fonts that will be used in the web page */
+
+@font-face{
+    font-family: Title;
+    src: url(fonts/Montserrat-Bold.ttf);
+}
+
+@font-face{
+    font-family: SubTitle;
+    src: url(fonts/Montserrat-Thin.ttf);
+}
+
+@font-face{
+    font-family: Bold;
+    src: url(fonts/Montserrat-SemiBold.ttf);
+}
+
+@font-face{
+    font-family: Regular;
+    src: url(fonts/Montserrat-Regular.ttf);
+}
+
+/* All original styling is styled for mobile */
+
+/* Starting off with the header which is just the logo */
+
+.logo {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .header {
+    margin: 0;
+    border: 0;
+    height: 90px;
+    display: flex;
+    justify-content: left;
+    background-color: #f7f7ff;
+    padding-left: 20px;
+  }
+
+/*  main div covers the contents between the header and the footer */
+
+  .main-div{
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 0;
+      margin-bottom: 50px;
+      border: 0;
+  }
+
+  .scooter{
+      width: 100%;
+      margin-bottom: 25px;
+  }
+
+  .body{
+      background-color: #f7f7ff;
+      margin: 0;
+      border: 0;
+  }
+
+  h1{
+      font-family: Title;
+      font-size: 70px;
+      margin: 0px 22px 5px 22px;
+      border: 0;
+  }
+
+  h2{
+      font-family: SubTitle;
+      font-size: 20px;
+      margin: 0px 22px 15px 22px;
+      border: 0;
+  }
+
+
+/* Form styling */
+
+.form-container{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    height: 500px;
+    width: 75%;
+    border-radius: 20px;
+    box-shadow: 8px 8px 7px rgb(146, 143, 143);
+}
+
+
+/* used grid display to arange form design */
+
+.form-grid{
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 75px;
+    grid-template-areas: "apply"
+                         "enter"
+                         "first"
+                         "last"
+                         "phone"
+                         "email"
+                         "agree"
+                         "submit"
+                         "link";
+    row-gap: 10px;
+}
+
+h3{
+    grid-area: apply;
+    font-family: Title;
+    font-size: 45px;
+}
+
+p{
+    grid-area: enter;
+    font-family: Regular;
+    font-size: 18px;
+}
+
+.first{
+    grid-area: first;
+    height: 35px;
+    font-family: Regular;
+    font-size: 17px;
+    background-color: #f7f7ff;
+    color: gray;
+    border-radius: 10px;
+    border: none;
+}
+
+.last{
+    grid-area: last;
+    height: 35px;
+    font-family: Regular;
+    font-size: 17px;
+    background-color: #f7f7ff;
+    color: gray;
+    border-radius: 10px;
+    border: none;
+}
+
+.phone{
+    grid-area: phone;
+    height: 35px;
+    font-family: Regular;
+    font-size: 17px;
+    background-color: #f7f7ff;
+    color: gray;
+    border-radius: 10px;
+    border: none;
+}
+
+.email{
+    grid-area: email;
+    height: 35px;
+    font-family: Regular;
+    font-size: 17px;
+    background-color: #f7f7ff;
+    color: gray;
+    border-radius: 10px;
+    border: none;
+}
+
+.button{
+    grid-area: agree;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;
+    font-family: Regular;
+    font-size: 15px;
+}
+
+input[type=radio] {
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin-right: 5%;
+}
+
+.drive{
+    grid-area: submit;
+    background-color: #57eeab;
+    font-family: Title;
+    color: #333131;
+    font-size: 25px;
+    border-radius: 10px;
+    border: none;
+    padding: 7px;
+}
+
+p2{
+    grid-area: link;
+    font-family: Regular;
+    font-size: 15px;
+}
+
+.form-link{
+    grid-area: link;
+    font-family: Regular;
+    font-size: 15px;
+    color: #ff8480;
+    text-decoration: none;
+}
+
+/* Footer Styling */
+
+footer{
+    background-color: #fffd8c;
+    padding-top: 15px;
+}
+
+/* For the two lines of words in the footer I used the grid again to put the lines into two different rows */
+
+h4{
+    margin: 0;
+    border: 0;
+    font-family: Bold;
+    font-size: 20px;
+    grid-area: see;
+}
+
+h5{
+    margin: 0;
+    border: 0;
+    font-family: SubTitle;
+    font-size: 15px;
+    grid-area: how;
+}
+
+.footer-titles{
+    display: grid;
+    grid-template-columns: 350px;
+    grid-template-rows: 40px 40px;
+    grid-template-areas: "see"
+                         "how";
+    grid-gap: 18px;
+    justify-content: left;
+    margin-left: 7%;
+    padding-bottom: 8px;
+}
+
+/* Made a form into a grid to match the mock up styling, first  row 2 columns, second row one column */
+
+.footer-form{
+display: grid;
+grid-template-columns: 20% 65%;
+grid-template-rows: 40px 40px;
+grid-template-areas: "hs cs"
+                     "calc calc";
+grid-gap: 10px;
+justify-content: center;
+}
+
+.hours{
+    grid-area: hs;
+    font-family: Regular;
+    font-size: 17px;
+    background-color: white;
+    color: gray;
+    border-radius: 10px;
+    border: none;
+}
+
+.city{
+    grid-area: cs;
+    font-family: Regular;
+    font-size: 17px;
+    background-color: white;
+    color: gray;
+    border-radius: 10px;
+    border: none;
+}
+
+.calculate{
+    grid-area: calc;
+    background-color: #ff8480;
+    font-family: Bold;
+    color: white;
+    font-size: 25px;
+    border-radius: 10px;
+    border: none;
+}
+
+/* flex for social icons in footer, padding to give the styling some breathing room */
+
+.social-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+}
+
+
+/* Media Queries */
+
+/* First off is the tablet version. Main change is the footer, other changes are just touch ups */
+
+  @media (min-width: 780px) {
+    .footer-form{
+        display: grid;
+        grid-template-columns: 20% 45% 20%;
+        grid-template-rows: 40px;
+        grid-template-areas: "hs cs calc";
+        grid-gap: 10px;
+        justify-content: center;
+        }
+  }
+
+/* Many changes going into the desktop. Mainly grid rearangement of the main conent and footer */
+
+  @media (min-width: 1024px){
+    .footer-form{
+        display: grid;
+        grid-template-columns: 10% 30% 10%;
+        grid-template-rows: 40px;
+        grid-template-areas: "hs cs calc";
+        grid-gap: 10px;
+        justify-content: left;
+        margin-left: 7%;
+        }
+
+        .footer-titles{
+            display: grid;
+            grid-template-columns: 500px;
+            grid-template-rows: 40px 40px;
+            grid-template-areas: "see"
+                                 "how";
+            grid-gap: 2px;
+            justify-content: left;
+            margin-left: 7%;
+        }
+
+        footer{
+            padding-top: 25px;
+        }
+
+        .social-icons{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            margin-right: 50px;
+            padding-bottom: 20px;
+        }
+  }
+
+  /* ran out of time before I could complete the rest of the main and refine the footer for the desktop version */
