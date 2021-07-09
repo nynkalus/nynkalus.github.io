@@ -1,0 +1,717 @@
+@font-face{
+    font-family: Light;
+    src: url(fonts/Raleway-Light.ttf);
+}
+
+@font-face{
+    font-family: Regular;
+    src: url(fonts/Raleway-Regular.ttf);
+}
+
+@font-face{
+    font-family: Bold;
+    src: url(fonts/Raleway-Bold.ttf);
+}
+
+@font-face{
+    font-family: SemiBold;
+    src: url(fonts/Raleway-SemiBold.ttf);
+}
+
+@font-face{
+    font-family: SemiBoldItalic;
+    src: url(fonts/Raleway-SemiBoldItalic.ttf);
+}
+
+@font-face{
+    font-family: ExtraLight;
+    src: url(fonts/Raleway-ExtraLight.ttf);
+}
+
+/* all starting css is styled for mobile version */
+
+body{
+    margin: 0;
+    border: 0;
+}
+
+
+/* HEADER */
+
+
+header{
+    background-color: #3C3B39;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo{
+    width: 20%;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+.nav-buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-link, .about-link, .contact-link{
+    font-family: Regular;
+    text-decoration: none;
+    color: #f2f2f2;
+    margin-bottom: 20px;
+}
+
+.contact-link{
+    padding-bottom: 20px;
+}
+
+/* animation for nav links */
+
+.home-link:hover, .about-link:hover, .contact-link:hover{
+    font-family: Bold;
+}
+
+.contact-link{
+    margin-bottom: 8px;
+}
+
+
+/* Discover Your Arc Div */
+
+
+.discover{
+    display: grid;
+    grid-template-areas: "dya dya"
+                         "words words"
+                         "bowl climb"
+                         "fit court"
+                         "start start"
+                         "pic pic";
+    justify-content: center;
+    
+}
+
+h1{
+    grid-area: dya;
+    font-family: Bold;
+    color: #3d3a39; 
+    font-size: 42px;
+    text-align: left;
+    margin-left: 56px;
+    margin-right: 120px;
+    margin-bottom: 1px;
+}
+
+.words1{
+    grid-area: words;
+    font-family: Regular;
+    color: #3d3a39;
+    font-size: 24px;
+    text-align: left;
+    margin: 20px 60px 0px 56px;
+    line-height: 48px;
+}
+
+.rockclimbing{
+    grid-area: climb;
+}
+
+.dumbbell{
+    grid-area: fit;
+}
+
+.basketball{
+    grid-area: court;
+}
+
+.start-button{
+    grid-area: start;
+    background-color: #26a682;
+    margin-left: 8.5%;
+    margin-top: 20px;
+    width: 400px;
+    box-shadow: 6px 6px 6px rgb(146, 143, 143);
+    font-family: SemiBold;
+    color: #f2f2f2;
+    font-size: 35px;
+    border-radius: 30px;
+    border: none;
+    padding: 7px;
+}
+
+/* hover animation for button */
+
+.start-button:hover{
+    box-shadow: 2px 2px 2px rgb(146, 143, 143);
+}
+
+.discover-pic{
+    grid-area: pic;
+    max-width: 80%;
+    height: auto;
+    padding: 40px;
+
+}
+
+.bowling, .rockclimbing, .dumbbell, .basketball{
+    padding-left: 50px;
+    padding-top: 30px;
+    height: 100px;
+}
+
+.bowling{
+    grid-area: bowl;
+    padding-left: 70px;
+}
+
+.dumbbell, .basketball{
+    padding-bottom: 20px;
+}
+
+
+/************ Algonquin College DIV ***********/
+
+
+.algonquin{
+    display: flex;
+    flex-direction: column;
+}
+
+.school{
+    max-width: 100%;
+    height: auto;
+}
+
+h2{
+    font-family: SemiBoldItalic;
+    font-size: 45px;
+    color: #3d3a3a;
+    margin: 30px 0px 1px 56px;
+    margin-bottom: 1px;
+    margin-left: 56px;
+}
+
+h3{
+    font-family: Light;
+    font-size: 30px;
+    color: #26a682;
+    margin: 11px 0px 1px 56px;
+}
+
+.words2{
+    font-family: Light;
+    font-size: 16px;
+    margin: 15px 60px 1px 56px;
+    line-height: 40px;
+    color: #3d3a3a;
+}
+
+.learn-button{
+    margin: 22px 1px 30px 54%;
+    background-color: #26a682;
+    width: 160px;
+    box-shadow: 6px 6px 6px rgb(146, 143, 143);
+    font-family: SemiBold;
+    color: #f2f2f2;
+    font-size: 22px;
+    border-radius: 30px;
+    border: none;
+    padding: 8px;
+}
+
+.learn-button:hover{
+    box-shadow: 2px 2px 2px rgb(146, 143, 143);
+}
+
+
+/************ Simon DIV ***********/
+
+
+.simon-div{
+    background-color: #3c3b39;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    margin: 0px;
+}
+
+.simon{
+    max-width: 200px;
+    height: auto;
+    margin-top: 30px;
+    border: 5px solid #f2f2f2;
+    border-radius: 50%;
+}
+
+h4{
+    font-family: SemiBold;
+    color: #f2f2f2;
+    font-size: 32px;
+    margin: 30px 0px 0px 0px;
+}
+
+h5{
+    font-family: SemiBold;
+    color: #f2f2f2;
+    font-size: 32px;
+    margin: 20px 0px 0px 0px;
+}
+
+.words3{
+    font-family: Light;
+    color: #f2f2f2;
+    font-size: 15px;
+    line-height: 40px;
+    margin: 15px 60px 30px 65px;
+}
+
+.learn-button1{
+    margin: 22px 1px 30px 54%;
+    background-color: #26a682;
+    width: 160px;
+    box-shadow: 6px 6px 6px rgb(146, 143, 143);
+    font-family: SemiBold;
+    color: #f2f2f2;
+    font-size: 22px;
+    border-radius: 30px;
+    border: none;
+    padding: 8px;
+}
+
+.learn-button1:hover{
+    box-shadow: 2px 2px 2px rgb(146, 143, 143);
+}
+
+
+/************ Entertainment DIV ***********/
+
+
+.entertainment-div{
+    display: flex;
+    flex-direction: column;
+}
+
+.entertainment{
+    max-width: 100%;
+    height: auto;
+}
+
+h6{
+    font-family: SemiBoldItalic;
+    font-size: 45px;
+    color: #3d3a3a;
+    margin: 30px 0px 1px 56px;
+    margin-bottom: 1px;
+    margin-left: 56px;
+}
+
+h7{
+    font-family: Light;
+    font-size: 30px;
+    color: #26a682;
+    margin: 11px 0px 1px 56px;
+}
+
+.words4{
+    font-family: Light;
+    font-size: 16px;
+    margin: 15px 60px 1px 56px;
+    line-height: 40px;
+    color: #3d3a3a;
+}
+
+
+/************ FOOTER ***********/
+
+
+footer{
+    display: grid;
+    grid-template-areas: "tit up";
+    grid-template-columns: 70% 30%;
+    justify-items: center;
+    align-items: center;
+    background-color: #3c3b39;
+    height: 125px;
+}
+
+.footer-title{
+    grid-area: tit;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+h8{
+    margin: 0px 0px 12px 107px;
+    font-family: Light;
+    font-size: 25px;
+    color: #f2f2f2;
+    
+}
+
+.social-icons{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20%;
+    
+}
+
+.facebook, .insta, .twitter, .youtube{
+    margin-left: 22px;
+    max-width: 100%;
+    height: 30px;
+}
+
+.arrrow-link{
+    grid-area: arrow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.arrow{
+    max-width: 100%;
+    height: 42px;
+}
+
+
+
+/************ Tablet media queries *************/
+
+
+@media screen and (min-width: 720px){
+
+    /* Starting with header, make flex into row instead of column and adjust styling from there*/
+ 
+    /* HEADER */
+
+    header{
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+    .logo{
+        height: 80px;
+        margin: 0px;
+        border: 0px;
+        padding: 0px;
+    }
+    
+    .nav-buttons{
+        padding-left: 40%;
+        flex-direction: row;
+    }
+
+    .home-link, .about-link, .contact-link{
+        margin: 0px;
+        border: 0px;
+        padding: 0px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+
+    /* DISCOVER */
+
+
+    .discover{
+        display: grid;
+        grid-template-areas: "dya1 dya1 dya1 dya1"
+                             "words1 words1 words1 words1"
+                             "bowl1 climb1 fit1 court1"
+                             "start1 start1 start1 start1"
+                             "pic1 pic1 pic1 pic1";
+        justify-content: center;
+        margin: 30px 30px 30px 30px;
+    }
+
+    h1{
+        grid-area: dya1;
+        font-size: 70px;
+        
+    }
+
+    .words1{
+        grid-area: words1;
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .bowling, .rockclimbing, .dumbbell, .basketball{
+        margin: 30px 0px 30px 0px;
+        padding: 0px;
+        border: 0px;
+    }
+
+    .bowling{
+        grid-area: bowl1;
+        margin-left: 22%;
+    }
+
+    .rockclimbing{
+        grid-area: climb1;
+    }
+    
+    .dumbbell{
+        grid-area: fit1;
+    }
+    
+    .basketball{
+        grid-area: court1;
+    }    
+
+    .start-button{
+        grid-area: start1;
+        margin-left: 23%;
+        margin-bottom: 20px;
+        padding: 0px;
+        width: 370px;
+        font-size: 45px;
+    }
+
+    .discover-pic{
+        grid-area: pic1;
+        max-width: 400px;
+        height: auto;
+        padding: 40px;
+        margin-left: 15%;
+    }
+
+
+    /* SIMON */
+
+
+    .simon-div{
+        display: grid;
+        grid-template-areas: "simon text"
+                             "title1 text"
+                             "title2 text";
+        border: none;
+        margin: 0px;
+        padding: 50px;
+    }
+    
+    .simon{
+        grid-area: simon;
+        height: auto;
+        margin-left: 15px;
+        border: 5px solid #f2f2f2;
+        border-radius: 50%;
+    }
+    
+    h4{
+        grid-area: title1;
+        font-size: 32px;
+        margin: 30px 0px 0px 5px;
+    }
+    
+    h5{
+        grid-area: title2;
+        font-size: 32px;
+        margin: 10px 0px 0px 25px;
+    }
+    
+    .words3{
+        grid-area: text;
+        margin: 15px 60px 30px 65px;
+    }
+
+
+}
+
+@media screen and (min-width: 1080px){
+
+    /*ADJUST NAV BUTTON POSITION*/
+
+    .nav-buttons{
+        padding-left: 50%;
+    }
+
+    /* ADJUST DYA TO DESKTOP VERSION. IN HINDSIGHT I SHOULDVE PUT THE ICONS INTO THEIR OWN DIV TO MAKE CODING EASIER */
+
+    .discover{
+        display: grid;
+        grid-template-areas: "dya2 dya2 dya2 dya2 pic2"
+                             "words2 words2 words2 words2 pic2"
+                             "bowl2 climb2 fit2 court2 pic2"
+                             "start2 start2 start2 start2 pic2";
+        margin: 60px 30px 30px 30px;
+        align-content: center;
+        grid-row-gap: 0px;
+    }
+
+    h1{
+        grid-area: dya2;
+        font-size: 70px;
+        padding: 0px 50px 0px 30px;
+        margin: 0px;
+    }
+
+    .words1{
+        grid-area: words2;
+        font-size: 24px;
+        line-height: 30px;
+        padding: 0px 50px 0px 30px;
+        margin: 0px;
+    }
+
+    .bowling, .rockclimbing, .dumbbell, .basketball{
+        margin: 30px 0px 30px 0px;
+        padding: 0px;
+        border: 0px;
+    }
+
+    .bowling{
+        grid-area: bowl2;
+        margin-left: 5%;
+    }
+
+    .rockclimbing{
+        grid-area: climb2;
+    }
+    
+    .dumbbell{
+        grid-area: fit2;
+    }
+    
+    .basketball{
+        grid-area: court2;
+    }    
+
+    .start-button{
+        grid-area: start2;
+        margin: 0px 0px 30px 30%;
+        padding: 0px;
+        max-height: 70px;
+        
+    }
+
+    .discover-pic{
+        grid-area: pic2;
+        max-width: 50vw;
+        height: auto;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    /* ALGONQUIN COLLEGE */
+
+    .algonquin{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: "schoo head1"
+                             "schoo head2"
+                             "schoo p1"
+                             "schoo but";
+        background-color: #f2f2f2;
+    }
+    
+    .school{
+        grid-area: schoo;
+        margin: 50px 10px 50px 25px;
+    }
+    
+    h2{
+        grid-area: head1;
+        margin: 120px 0px 1px 56px;
+    }
+    
+    h3{
+        grid-area: head2;
+        margin: 11px 0px 40px 56px;
+    }
+    
+    .words2{
+        grid-area: p1;
+        margin: 15px 60px 1px 56px;
+        line-height: 40px;
+    }
+    
+    .learn-button{
+        grid-area: but;
+        margin: 22px 1px 30px 54%;
+        width: 160px;
+        max-height: 50px;
+        padding: 8px;
+    }
+
+    /* SIMON */
+
+    .simon-div{
+        display: grid;
+        grid-template-areas: "simon1 titlea text1"
+                             "simon1 titleb text1";
+        border: none;
+        padding: 50px;
+    }
+    
+    .simon{
+        grid-area: simon1;
+        margin-left: 90px;
+    }
+    
+    h4{
+        grid-area: titlea;
+        font-size: 32px;
+        margin: 75px 0px 0px 120px;
+    }
+    
+    h5{
+        grid-area: titleb;
+        font-size: 32px;
+        margin: 0px 0px 80px 141px;
+    }
+    
+    .words3{
+        grid-area: text1;
+        margin: 0px 115px 0px 125px;
+    }
+
+    /* ENTERTAINMENT */
+
+    .entertainment-div{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: "ent he1"
+                             "ent he2"
+                             "ent p"
+                             "ent sub";
+        background-color: #f2f2f2;
+    }
+    
+    .entertainment{
+        grid-area: ent;
+        margin: 50px 10px 50px 25px;
+    }
+    
+    h6{
+        grid-area: he1;
+        margin: 120px 0px 1px 56px;
+    }
+    
+    h7{
+        grid-area: he2;
+        margin: 11px 0px 40px 56px;
+    }
+    
+    .words4{
+        grid-area: p;
+        margin: 15px 60px 1px 56px;
+    }
+    
+    .learn-button1{
+        grid-area: sub;
+    }
+
+
+    /* FOOTER */
+
+    .footer-title{
+        margin-left: 25%;
+    }
+}
