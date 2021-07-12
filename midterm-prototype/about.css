@@ -1,0 +1,1030 @@
+@font-face{
+    font-family: Light;
+    src: url(fonts/Raleway-Light.ttf);
+}
+
+@font-face{
+    font-family: Regular;
+    src: url(fonts/Raleway-Regular.ttf);
+}
+
+@font-face{
+    font-family: Bold;
+    src: url(fonts/Raleway-Bold.ttf);
+}
+
+@font-face{
+    font-family: SemiBold;
+    src: url(fonts/Raleway-SemiBold.ttf);
+}
+
+@font-face{
+    font-family: SemiBoldItalic;
+    src: url(fonts/Raleway-SemiBoldItalic.ttf);
+}
+
+@font-face{
+    font-family: ExtraLight;
+    src: url(fonts/Raleway-ExtraLight.ttf);
+}
+
+@font-face{
+    font-family: BoldItalic;
+    src: url(fonts/Raleway-BoldItalic.ttf);
+}
+
+/* all starting css is styled for mobile version */
+
+body{
+    margin: 0;
+    border: 0;
+}
+
+
+/* HEADER */
+
+
+.nav{
+    background-color: #3C3B39;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo{
+    width: 20%;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+.nav-buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-link, .about-link, .contact-link{
+    font-family: Regular;
+    text-decoration: none;
+    color: #f2f2f2;
+    margin-bottom: 20px;
+}
+
+.contact-link{
+    padding-bottom: 20px;
+}
+
+/* animation for nav links */
+
+.home-link:hover, .about-link:hover, .contact-link:hover{
+    font-family: Bold;
+}
+
+.contact-link{
+    margin-bottom: 8px;
+}
+
+
+/************ FOOTER ***********/
+
+
+footer{
+    display: grid;
+    grid-template-areas: "tit up";
+    grid-template-columns: 70% 30%;
+    justify-items: center;
+    align-items: center;
+    background-color: #3c3b39;
+    height: 125px;
+}
+
+.footer-title{
+    grid-area: tit;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.footer-words{
+    margin: 0px 0px 12px 107px;
+    font-family: Light;
+    font-size: 25px;
+    color: #f2f2f2;
+}
+
+.social-icons{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20%;
+    
+}
+
+.facebook, .insta, .twitter, .youtube{
+    margin-left: 22px;
+    max-width: 100%;
+    height: 30px;
+}
+
+.arrrow-link{
+    grid-area: arrow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.arrow{
+    max-width: 100%;
+    height: 42px;
+}
+
+
+/********* CONSTRUCTION DIV **********/
+
+.construction{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1{
+    font-family: Bold;
+    color: #3d3a39; 
+    font-size: 42px;
+    text-align: left;
+    margin-left: 56px;
+    margin-right: 100px;
+    margin-bottom: 1px;
+}
+
+.part1{
+    font-family: Regular;
+    color: #3d3a39;
+    font-size: 22px;
+    text-align: left;
+    margin: 20px 60px 0px 56px;
+    line-height: 34px;
+}
+
+.part2{
+    font-family: Regular;
+    color: #3d3a39;
+    font-size: 20px;
+    text-align: left;
+    margin: 20px 60px 0px 56px;
+    line-height: 34px;
+}
+
+.construction-pic{
+    max-width: 100%;
+    height: auto;
+    margin: 30px;
+}
+
+
+/****** ABOUT DIV ******/
+
+.about-div{
+display: flex;
+flex-direction: column;
+background-color: #f2f2f2;
+}
+
+.about-title{
+    height: 246px;
+    background-image: url(images/about-480.jpg);
+}
+
+.title1{
+    color: #f2f2f2;
+    font-family: Bold;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 90px;
+}
+
+h2, h3, h4{
+    font-family: BoldItalic;
+    font-size: 30px;
+    color: #3d3a3a;
+    margin: 20px 0px 1px 56px;
+}
+
+.who, .what, .where{
+    font-family: Regular;
+    font-size: 16px;
+    margin: 0px 60px 1px 56px;
+    line-height: 40px;
+    color: #3d3a3a;
+}
+
+.where{
+    margin-bottom: 20px;
+}
+
+/*********** SERVICES DIV *************/
+
+    .services-div{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .services-title{
+        height: 246px;
+        background-image: url(images/services-480.jpg);
+    }
+
+    .title2{
+        color: #f2f2f2;
+        font-family: Bold;
+        font-size: 50px;
+        text-align: center;
+        margin-top: 90px;
+    }
+
+    h5{
+        font-family: Bold;
+        font-size: 45px;
+        color: #3d3a3a;
+        margin: 30px 0px 1px 56px;
+        margin-bottom: 1px;
+        margin-left: 56px;
+    }
+    
+    h6{
+        font-family: Light;
+        font-size: 30px;
+        color: #26a682;
+        margin: 5px 0px 1px 56px;
+    }
+
+    .words1{
+        font-family: Regular;
+        font-size: 16px;
+        margin: 15px 75px 20px 56px;
+        line-height: 40px;
+        color: #3d3a3a;
+    }
+
+    .bar-pic{
+        width: 0px;
+    }
+
+    /********** COMPETE DIV ************/
+
+    .compete-div{
+        display: flex;
+        flex-direction: column;
+        background-color: #f2f2f2;
+        }
+
+    h7{
+        font-family: Bold;
+        font-size: 40px;
+        color: #3d3a3a;
+        margin: 30px 0px 1px 56px;
+        margin-bottom: 1px;
+        margin-left: 56px;
+    }
+
+    h8{
+        font-family: Regular;
+        font-size: 30px;
+        color: #26a682;
+        margin: 5px 0px 1px 56px;
+    }
+
+    .words2{
+        font-family: Regular;
+        font-size: 16px;
+        margin: 15px 75px 20px 56px;
+        line-height: 40px;
+        color: #3d3a3a;
+    }
+
+
+    .bowling-pic{
+        width: 0px;
+    }
+
+    /********** SUBSCRIBE DIV ***********/
+
+    .sub-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #3c3b3a;
+    }
+
+    .sub-title{
+        font-family: Regular;
+        font-size: 20px;
+        margin: 25px 0px 20px 65px;
+        color: #f2f2f2;
+    }
+
+    .sub-button{
+        background-color: #26a682;
+        margin-left: 29%;
+        margin-top: 0px;
+        width: 180px;
+        height: 40px;
+        font-family: SemiBold;
+        color: #f2f2f2;
+        font-size: 25px;
+        border-radius: 30px;
+        border: none;
+        padding: 7px;
+        margin-bottom: 30px;
+    }
+
+    /********** NEW YEAR DIV ***********/
+
+    .new-div{
+        display: flex;
+        flex-direction: column;
+        }
+
+    h9{
+        font-family: Bold;
+        font-size: 40px;
+        color: #3d3a3a;
+        margin: 30px 0px 1px 56px;
+        margin-bottom: 1px;
+        margin-left: 56px;
+    }
+
+    h10{
+        font-family: Regular;
+        font-size: 30px;
+        color: #26a682;
+        margin: 5px 0px 1px 56px;
+    }
+
+    .words3{
+        font-family: Regular;
+        font-size: 16px;
+        margin: 15px 75px 20px 56px;
+        line-height: 40px;
+        color: #3d3a3a;
+    }
+
+    .fitness-pic{
+        width: 0px;
+    }
+
+    /********** INDOOR DIV ***********/
+
+    .indoor-div{
+        display: flex;
+        flex-direction: column;
+        background-color: #f2f2f2;
+        }
+
+    h11{
+        font-family: Bold;
+        font-size: 40px;
+        color: #3d3a3a;
+        margin: 30px 0px 1px 56px;
+        margin-bottom: 1px;
+        margin-left: 56px;
+    }
+
+    h12{
+        font-family: Regular;
+        font-size: 30px;
+        color: #26a682;
+        margin: 5px 0px 1px 56px;
+    }
+
+    .words4{
+        font-family: Regular;
+        font-size: 16px;
+        margin: 15px 75px 20px 56px;
+        line-height: 40px;
+        color: #3d3a3a;
+    }
+
+    .climbing-pic{
+        width: 0px;
+    }
+
+
+    /********** SPECIAL THANKS DIV ***********/
+
+    .thanks-div{
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px;
+        }
+
+    h13{
+        font-family: Bold;
+        font-size: 62px;
+        color: #3d3a3a;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-left: 8px;
+        text-align: center;
+    }
+
+    .sa-pic{
+        max-width: 80%;
+        height: auto;
+        margin: 30px 0px 0px 50px;
+    }
+
+    .ac-pic{
+        max-width: 50%;
+        height: auto;
+        margin: 30px 0px 0px 115px;
+    }
+
+    .pcl-pic{
+        max-width: 80%;
+        height: auto;
+        margin: 10px 0px 0px 50px;
+    }
+
+    .cibc-pic{
+        max-width: 50%;
+        height: auto;
+        margin: 30px 0px 50px 120px;
+    }
+    
+@media screen and (min-width: 720px){
+
+    /* Starting with header, make flex into row instead of column and adjust styling from there*/
+ 
+    /* HEADER */
+
+    .nav{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .logo{
+        height: 80px;
+        margin: 0px;
+        border: 0px;
+        padding: 0px;
+    }
+    
+    .nav-buttons{
+        padding-left: 40%;
+        flex-direction: row;
+    }
+
+    .home-link, .about-link, .contact-link{
+        margin: 0px;
+        border: 0px;
+        padding: 0px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /********* CONSTRUCTION DIV **********/
+
+    h1{
+        font-size: 60px;
+        margin-left: 68px;
+        margin-right: 100px;
+        margin-bottom: 1px;
+        margin-top: 40px;
+    }
+
+    .part1{
+        font-size: 22px;
+        margin: 20px 100px 0px 68px;
+    }
+
+    .part2{
+        font-size: 22px;
+        margin: 20px 100px 0px 68px;
+    }
+
+    .construction-pic{
+        max-width: 100%;
+        height: auto;
+        margin: 80px;
+    }
+
+    /****** ABOUT DIV ******/
+    
+    .about-title{
+        height: 324px;
+        background-image: url(images/about-760.jpg);
+    }
+    
+    .title1{
+        font-size: 50px;
+        margin-top: 120px;
+    }
+    
+    h2, h3, h4{
+        font-size: 40px;
+    }
+    
+    .who, .what, .where{
+        font-size: 18px;
+        margin: 10px 60px 1px 56px;
+    }
+    
+    .where{
+        margin-bottom: 50px;
+    }
+
+    /*********** SERVICES DIV *************/
+    
+    .services-div{
+        display: grid;
+        grid-template-areas: "head head"
+                             "pic1 he5"
+                             "pic1 he6"
+                             "pic1 word1";
+    }
+
+    .services-title{
+        grid-area: head;
+        height: 324px;
+        background-image: url(images/services-760.jpg);
+    }
+
+    .title2{
+        margin-top: 90px;
+    }
+
+    h5{
+        grid-area: he5;
+        margin: 100px 0px 0px 20px;
+    }
+    
+    h6{
+        grid-area: he6;
+        margin: 0px 0px 0px 20px;
+        padding: 0px;
+    }
+
+    .words1{
+        grid-area: word1;
+        margin: 0px 10px 30px 20px;
+    }
+
+    .bar-pic{
+        grid-area: pic1;
+        width: 360px;
+        margin: 40px 0px 40px 40px;
+    }
+
+    /*********** COMPETE DIV *************/
+
+    .compete-div{
+        display: grid;
+        grid-template-areas: "he7 pic2"
+                             "he8 pic2"
+                             "word2 pic2";
+    }
+
+    h7{
+        grid-area: he7;
+        margin: 100px 0px 0px 20px;
+    }
+
+    h8{
+        grid-area: he8;
+        margin: 0px 0px 0px 20px;
+        padding: 0px;
+    }
+
+    .words2{
+        grid-area: word2;
+        margin: 0px 10px 30px 20px;
+    }
+
+    .bowling-pic{
+        grid-area: pic2;
+        width: 360px;
+        margin: 40px 40px 40px 40px;
+    }
+
+    /********** SUBSCRIBE DIV ***********/
+
+    .sub-div{
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+    }
+
+    .sub-title{
+        margin: 25px 0px 20px 65px;
+    }
+
+    .sub-button{
+        margin: 13px 0px 0px 10%;
+        
+    }
+
+    /********** NEW YEAR DIV ***********/
+
+    .new-div{
+        display: grid;
+        grid-template-areas: "pic3 he9"
+                             "pic3 he10"
+                             "pic3 word3";
+    }
+
+    h9{
+        grid-area: he9;
+        margin: 100px 0px 0px 20px;
+    }
+    
+    h10{
+        grid-area: he10;
+        margin: 0px 0px 0px 20px;
+        padding: 0px;
+    }
+
+    .words3{
+        grid-area: word3;
+        margin: 0px 10px 30px 20px;
+    }
+
+    .fitness-pic{
+        grid-area: pic3;
+        width: 360px;
+        margin: 40px 0px 40px 40px;
+    }
+
+
+    /*********** INDOOR DIV *************/
+
+    .indoor-div{
+        display: grid;
+        grid-template-areas: "he11 pic4"
+                             "he12 pic4"
+                             "word4 pic4";
+    }
+
+    h11{
+        grid-area: he11;
+        margin: 100px 0px 0px 20px;
+    }
+
+    h12{
+        grid-area: he12;
+        margin: 0px 0px 0px 20px;
+        padding: 0px;
+    }
+
+    .words4{
+        grid-area: word4;
+        margin: 0px 10px 30px 20px;
+    }
+
+    .climbing-pic{
+        grid-area: pic4;
+        width: 360px;
+        margin: 40px 40px 40px 40px;
+    }
+
+    /********** SPECIAL THANKS DIV ***********/
+
+    h13{
+        margin: 30px 50px 30px 50px;
+    }
+
+    .sa-pic{
+        max-width: 80%;
+        height: auto;
+        margin: 30px 0px 0px 60px;
+    }
+
+    .ac-pic{
+        max-width: 50%;
+        height: auto;
+        margin: 30px 0px 0px 25%;
+    }
+
+    .pcl-pic{
+        max-width: 50%;
+        margin: 10px 0px 0px 25%;
+    }
+
+    .cibc-pic{
+        max-width: 40%;
+        height: auto;
+        margin: 30px 0px 50px 29%;
+    }
+}
+    @media screen and (min-width: 1080px){
+
+        /*ADJUST NAV BUTTON POSITION*/
+    
+        .nav-buttons{
+            padding-left: 50%;
+        }
+
+         /* FOOTER */
+
+        .footer-title{
+        margin-left: 25%;
+        }
+
+
+        /********* CONSTRUCTION DIV **********/
+
+        .construction{
+            display: grid;
+            grid-template-areas: "he1 con"
+                                 "p1 con"
+                                 "p2 con";
+            grid-template-rows: 50% 
+                                20%
+                                20%;
+            margin-bottom: 75px;
+            margin-top: 25px;
+        }
+
+        h1{
+            grid-area: he1;
+            font-size: 56px;
+            margin: 25px 0px 1px 100px;
+        }
+
+        .part1{
+            grid-area: p1;
+            font-size: 20px;
+            margin: 1px 10px 1px 100px;
+            line-height: 34px;
+        }
+
+        .part2{
+            grid-area: p2;
+            font-size: 20px;
+            margin: 10px 10px 1px 100px;
+            line-height: 34px;
+
+        }
+
+        .construction-pic{
+            grid-area: con;
+            max-width: 50vw;
+            height: auto;
+            margin: 30px;
+            margin-right: 60px;
+        }
+
+        /****** ABOUT DIV ******/
+
+        .about-div{
+            display: grid;
+            grid-template-areas: "bg bg bg"
+                                 "who what where"
+                                 "who1 what1 where1";
+        }
+
+        .about-title{
+            grid-area: bg;
+            height: 350px;
+            background-image: url(images/about-1920.jpg);
+        }
+
+        .title1{
+            margin-top: 8%;
+        }
+
+        h2, h3, h4{
+            font-family: BoldItalic;
+            font-size: 30px;
+            color: #3d3a3a;
+            margin: 150px 0px 1px 56px;
+        }
+
+        .who, .what, .where{
+            font-family: Regular;
+            font-size: 16px;
+            margin: 25px 60px 150px 56px;
+            line-height: 40px;
+            color: #3d3a3a;
+        }
+
+        h2{
+            grid-area: who;
+        }
+
+        h3{
+            grid-area: what;
+        }
+
+        h4{
+            grid-area: where;
+        }
+
+        .who{
+            grid-area: who1;
+        }
+        
+        .what{
+            grid-area: what1;
+        }
+
+        .where{
+            grid-area: where1;
+        }
+
+        .where{
+            margin-bottom: 20px;
+        }
+
+        /****** SERVICES DIV ******/
+
+        .services-div{
+            grid-template-columns: 50% 50%;
+            row-gap: 0px;
+        }
+    
+        .services-title{
+            height: 350px;
+            background-image: url(images/services-1960.jpg);
+        }
+    
+        .title2{
+            margin-top: 8%;
+        }
+    
+        h5{
+            grid-area: he5;
+            margin: 0px;
+            padding-top: 55px;
+        }
+        
+        h6{
+            grid-area: he6;
+            margin: 0px;
+            padding: 0px;
+        }
+    
+        .words1{
+            grid-area: word1;
+            margin: 0px;
+            margin-right: 50px;
+        }
+    
+        .bar-pic{
+            grid-area: pic1;
+            width: 80%;
+            margin: 0px;
+            padding: 60px 0px 60px 60px;
+        }
+
+        /****** COMPETE DIV ******/
+
+        .compete-div{
+            display: grid;
+            grid-template-areas: "he7 pic2"
+                                 "he8 pic2"
+                                 "word2 pic2";
+            grid-template-columns: 50% 50%;
+            row-gap: 0px;
+        }
+    
+        h7{
+            grid-area: he7;
+            margin: 0px;
+            padding-top: 55px;
+            padding-left: 60px;
+        }
+    
+        h8{
+            grid-area: he8;
+            margin: 0px 0px 0px 60px;
+            padding: 0px;
+        }
+    
+        .words2{
+            grid-area: word2;
+            margin: 0px 10px 30px 60px;
+        }
+    
+        .bowling-pic{
+            grid-area: pic2;
+            width: 80%;
+            margin: 0px;
+            padding: 60px 0px 60px 60px;
+        }
+
+        /****** NEW YEAR DIV ******/
+
+        .new-div{
+            grid-template-columns: 50% 50%;
+            row-gap: 0px;
+        }
+    
+        h9{
+            margin: 0px;
+            padding-top: 55px;
+        }
+        
+        h10{
+            margin: 0px;
+            padding: 0px;
+        }
+    
+        .words3{
+            margin: 0px;
+            margin-right: 50px;
+        }
+    
+        .fitness-pic{
+            grid-area: pic3;
+            width: 80%;
+            margin: 0px;
+            padding: 60px 0px 60px 60px;
+        }
+
+        /****** INDOOR DIV ******/
+
+        .indoor-div{
+            grid-template-columns: 50% 50%;
+            row-gap: 0px;
+        }
+    
+        h11{
+            margin: 0px;
+            padding-top: 55px;
+            padding-left: 60px;
+        }
+    
+        h12{
+            margin: 0px 0px 0px 60px;
+            padding: 0px;
+        }
+    
+        .words4{
+            margin: 0px 10px 30px 60px;
+        }
+    
+        .climbing-pic{
+            width: 80%;
+            margin: 0px;
+            padding: 60px 0px 60px 60px;
+        }
+
+        /********** SPECIAL THANKS DIV ***********/
+
+        .thanks-div{
+            display: grid;
+            grid-template-areas: "tit tit tit tit"
+                                 "sa ac pcl cibc";
+            grid-template-rows: 50% 
+                                50%;
+            margin: 0px;
+            padding: 0px;
+            margin-bottom: 90px;
+            }
+
+        h13{
+            grid-area: tit;
+            font-size: 62px;
+            margin: 50px 0px 50px 0px;
+        }
+
+        .sa-pic{
+            grid-area: sa;
+            max-width: 80%;
+            height: auto;
+            margin: 0px;
+            margin-left: 100px;
+        }
+
+        .ac-pic{
+            grid-area: ac;
+            max-width: 55%;
+            height: auto;
+            margin: 0px;
+            margin-left: 100px;
+        }
+
+        .pcl-pic{
+            grid-area: pcl;
+            max-width: 45%;
+            height: auto;
+            margin: 0px;
+            margin-left: 100px;
+        }
+
+        .cibc-pic{
+            grid-area: cibc;
+            max-width: 28%;
+            height: auto;
+            margin: 0px;
+            margin-left: 100px;
+        }
+    }
+
+    @media screen and (min-width: 1500px){
+
+        h1{
+            margin: 100px 0px 1px 100px;
+        }
+
+    }
