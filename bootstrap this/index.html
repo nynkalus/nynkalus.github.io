@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Bootstrap This</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    
+    <!-- Inside the main is where all my website content and bootstrap styling will go -->
+      <main>
+        
+        <!-- The header and first paragraph use basic class elements to change the style of the text and background color, as well using the bootstrap grid to make the paragraph responsive -->
+
+        <div class="bg-dark py-2">
+        <h1 class="text-white text-center font-weight-light py-2">- About Bootstrap -</h1>
+        </div>
+        
+
+        <div class="row">
+        <div class="col-md-2 col-xl-3"></div>
+        <p class="text-dark text-center font-weight-light p-4 col-md-8 col-xl-6">Bootsrap is a css framework that helps web develepors make responsive websites. Responsive meaning when you adjust the frame of the website the content of the site will keep a consistent look. To use bootstrap you can either link it from the internet or use a plug in that your coding software porvides. Bootstrap has does its styling on html but you can always override it in css</p>
+        <div class="col-md-2 col-xl-3"></div>
+        </div>
+
+        <!-- The next section is about the 12 column grid framework which utilizes that said framwork to illustrate how it works and it's utility -->
+
+        <h1 class="text-dark font-weight-normal font-italic text-center">12 Column Grid</h1>
+
+        <p class="text-dark text-center font-weight-light px-4 py-2">The thing that makes bootstrap reponsive is its 12 column grid. Basically, Bootstrap divides a web page into rows and columns. Inside each row are 12 columns. See below for an example..</p>
+
+        <div class="row pb-3">
+          <div class="col-1 border bg-dark text-center text-light">1</div>
+          <div class="col-1 border bg-dark text-center text-light">2</div>
+          <div class="col-1 border bg-dark text-center text-light">3</div>
+          <div class="col-1 border bg-dark text-center text-light">4</div>
+          <div class="col-1 border bg-dark text-center text-light">5</div>
+          <div class="col-1 border bg-dark text-center text-light">6</div>
+          <div class="col-1 border bg-dark text-center text-light">7</div>
+          <div class="col-1 border bg-dark text-center text-light">8</div>
+          <div class="col-1 border bg-dark text-center text-light">9</div>
+          <div class="col-1 border bg-dark text-center text-light">10</div>
+          <div class="col-1 border bg-dark text-center text-light">11</div>
+          <div class="col-1 border bg-dark text-center text-light">12</div>
+        </div>
+
+        <p class="text-dark text-center font-weight-light px-4 py-2"> These rows will change sizes depending on the screen you are viewing them with. Using this grid system you can create dynamic designs by stacking rows on top on another or using colums as responsive spacing. You can use 2 columns or you can use 10 columns just as long as its not over 12 in one row.. </p>
+
+        <div class="row">
+          <div class="col-3 border bg-light text-center text-dark">3</div>
+          <div class="col-6 border bg-dark text-center text-light">6</div>
+          <div class="col-3 border bg-light text-center text-dark">3</div>
+        </div>
+        <div class="row">
+          <div class="col-2 border bg-light text-center text-dark">2</div>
+          <div class="col-3 border bg-dark text-center text-light">3</div>
+          <div class="col-2 border bg-light text-center text-dark">2</div>
+          <div class="col-3 border bg-dark text-center text-light">3</div>
+          <div class="col-2 border bg-light text-center text-dark">2</div>
+        </div>
+        
+
+        <p class="text-dark text-center font-weight-light px-4 py-3"> Any element i.e header, image, footer can take up any number of these. You can also have multiple elements in one column. These columns can change size depending on your screen size you're using changing the layout of the grid, thus, changing the look of your site making it responsive see below for an example..</p>
+
+        <!-- This div shows off how you can make a website responsive with bootstrap grid framework. Each of the 123 divs hav different sizes for each size of media -->
+        
+          <div class="row col-8 offset-2 pb-3">
+              <div class="col-4 border bg-dark text-center text-light">Logo</div>
+              <div class="col-8 border bg-secondary text-center text-light">Nav</div>
+              <div class="col-12 col-md-12 col-xl-4 border bg-primary text-center text-light pt-4" style="height: 100px;">1</div>
+              <div class="col-12 col-md-6 col-xl-4 border bg-success text-center text-light pt-4" style="height: 100px;">2</div>
+              <div class="col-12 col-md-6 col-xl-4 border bg-danger text-center text-light pt-4" style="height: 100px;">3</div>
+              <div class="col-12 border bg-secondary text-center text-light">Footer</div>
+          </div>
+      
+      
+        <h1 class="text-dark font-weight-normal font-italic text-center pt-5">Pre-made HTML components</h1>
+
+        <p class="text-dark text-center font-weight-light px-4 py-2">Bootstrap has a wide array of Pre-made HTML components. A lot of these premade components are quite common on most websites. Things like buttons, dropdowns, and jumbotrons. You can add with little effort just adding the name of it into the class prefix. This will save you time from having to style the code yourself. Some examples below..</p>
+
+        <!-- These below are examples of the components you can use on bootstrap  -->
+
+        <div class="row">
+          <div class="col-lg-4 py-5">
+
+            <!-- button with color fade in when hovered over  -->
+
+            <button class="btn btn-outline-success offset-5">
+              Button
+            </button>
+          </div>
+          <div class="col-lg-4 py-5">
+              <div class="dropdown offset-4">
+
+                <!-- button with drop down links lead no where since it is only a example  -->
+
+                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Dropdown button
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Option 1</a>
+                  <a class="dropdown-item" href="#">Option 2</a>
+                  <a class="dropdown-item" href="#">Option 3</a>
+                </div>
+              </div>
+          </div>
+          <div class="col-lg-4">
+
+            <!-- Jumbotron fluid which inherits the space of its parent, used to put emphasis on information  -->
+
+            <div class="jumbotron jumbotron-fluid">
+              <div class="container">
+                <h1 class="display-4">Jumbotron</h1>
+                <p class="lead">This is a modified jumbotron called fluid that occupies the entire horizontal space of its parent.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Div for the last section is putting the column responsiveness to display and changing the alignment of the paragraphs depending on the screen size -->
+
+        <div class="row mb-4 mt-3">
+          <div class="col-lg-6">
+            <h1 class="text-dark font-weight-normal font-italic text-center pt-3">Browser Compatibility</h1>
+            <p class="text-dark text-center font-weight-light px-4 py-2">Something that web developers cannot forget is that the web browser market is very fragmented and not all    browsers interpret css correctly or the same. Bootstrap supports all of the modern web browsers as well as older ones</p>
+          </div>
+          <div class="col-lg-6">
+            <h1 class="text-dark font-weight-normal font-italic text-center pt-3">Active Development</h1>
+            <p class="text-dark text-center font-weight-light px-4 py-2">Boostrap is under active development this means that new features, bug fixes and improvements are released     frequently. This is important for choosing the software you use for a project since you do not want to use something that will eventually become out of date.</p>
+          </div>
+          <div class="col-lg-6">
+            <h1 class="text-dark font-weight-normal font-italic text-center pt-3">Flexibility</h1>
+            <p class="text-dark text-center font-weight-light px-4 py-2">Bootstrap is an easy to use software for new web developers and only requires basic knowledge of html and css.     New users will find Bootstrap accessible with its easily cusomizable colors, fonts, and paddings. Bootstrap even allows more skillful users to write new components through a     css import to allow more efficient and customizable coding.</p>
+          </div>
+          <div class="col-lg-6">
+            <h1 class="text-dark font-weight-normal font-italic text-center pt-3">Community</h1>
+            <p class="text-dark text-center font-weight-light px-4 py-2">The most helpful advantage for a new user is that there is an active community involved to help new users learn.     There is a whole eco system deticated to Bootstrap with 3rd parties creating themes, templates, snippets, Java plugins, and more for you to get your hands on.</p>
+          </div>
+        </div>
+
+        <!-- Copy of the header but stylized for a footer sign off for the exercise -->
+
+        <div class="bg-dark py-2">
+          <h1 class="h6 text-white text-right font-weight-light pr-3 mt-1">By Nicholas Holland</h1>
+          </div>
+
+      </main>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
